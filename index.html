@@ -3,68 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mensajes Ocultos - Demo</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <title>ShadowFrame - Mensajes Ocultos en Imágenes</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Mensajes Invisibles en Imágenes</h1>
-    <p>Oculta y revela secretos dentro de fotos con nuestro demo de esteganografía.</p>
-    <a href="#explicacion" class="btn">Descubrir más</a>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <h1>ShadowFrame: Mensajes Invisibles</h1>
+      <p>Oculta y revela secretos dentro de imágenes con nuestra tecnología de esteganografía avanzada</p>
+      <a href="#demo" class="btn">Probar Ahora <i class="fas fa-arrow-right"></i></a>
+    </div>
   </section>
 
+  <!-- Explanation Section -->
   <section id="explicacion">
-    <h2>¿Cómo funciona?</h2>
+    <div class="section-header">
+      <h2>¿Cómo funciona?</h2>
+      <p>Un proceso simple de tres pasos para ocultar tus mensajes secretos</p>
+    </div>
     <div class="steps">
       <div class="step">
+        <div class="step-icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </div>
         <h3>1. Sube tu imagen</h3>
-        <p>Selecciona cualquier foto en formato PNG o JPG.</p>
+        <p>Selecciona cualquier foto en formato PNG o JPG. Nuestro sistema mantendrá la calidad original.</p>
       </div>
       <div class="step">
+        <div class="step-icon">
+          <i class="fas fa-key"></i>
+        </div>
         <h3>2. Escribe un mensaje secreto</h3>
-        <p>El texto se esconde en los píxeles invisibles al ojo humano.</p>
+        <p>El texto se esconde en los píxeles de manera imperceptible al ojo humano con cifrado avanzado.</p>
       </div>
       <div class="step">
+        <div class="step-icon">
+          <i class="fas fa-share-alt"></i>
+        </div>
         <h3>3. Descarga y comparte</h3>
-        <p>Recibe la imagen lista para compartir con tu secreto oculto.</p>
+        <p>Recibe la imagen lista para compartir con tu secreto oculto. Solo quienes tengan la clave podrán leerlo.</p>
       </div>
     </div>
   </section>
 
+  <!-- Use Cases Section -->
   <section id="casos">
-    <h2>¿Para qué sirve?</h2>
+    <div class="section-header">
+      <h2>¿Para qué sirve?</h2>
+      <p>Descubre las múltiples aplicaciones de la esteganografía</p>
+    </div>
     <div class="use-cases">
-      <div class="case">💌 Mensajes románticos ocultos.</div>
-      <div class="case">🕵️ Comunicación privada en contextos sensibles.</div>
-      <div class="case">🎨 Marcas de agua invisibles en obras digitales.</div>
+      <div class="case">
+        <h3><i class="fas fa-heart"></i> Mensajes Románticos</h3>
+        <p>Sorprende a tu pareja con mensajes ocultos en fotos especiales.</p>
+      </div>
+      <div class="case">
+        <h3><i class="fas fa-shield-alt"></i> Comunicación Segura</h3>
+        <p>Protege información sensible en contextos que requieren privacidad.</p>
+      </div>
+      <div class="case">
+        <h3><i class="fas fa-water"></i> Marcas de Agua Digitales</h3>
+        <p>Protege tus obras digitales con marcas de agua invisibles.</p>
+      </div>
     </div>
   </section>
 
-  <section class="wow">
-    <h2>¿Notas la diferencia?</h2>
-    <p>A simple vista, esta imagen parece normal... pero guarda un secreto invisible.</p>
-    <img src="placeholder.png" alt="Imagen con mensaje oculto">
+  <!-- Demo Section -->
+  <section id="demo" class="demo">
+    <div class="section-header">
+      <h2>¿Notas la diferencia?</h2>
+      <p>A simple vista, esta imagen parece normal... pero guarda un mensaje secreto</p>
+    </div>
+    <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Imagen con mensaje oculto">
+      <div class="image-overlay">
+        <h3>Mensaje Oculto Descifrado:</h3>
+        <p>"La esteganografía es el arte de lo invisible"</p>
+        <a href="#" class="btn discovery">Descubrir cómo</a>
+      </div>
+    </div>
   </section>
 
+  <!-- Testimonials Section -->
   <section class="social-proof">
-    <h2>Lo que dicen quienes lo probaron</h2>
+    <div class="section-header">
+      <h2>Opiniones de usuarios</h2>
+      <p>Lo que dicen quienes ya han probado ShadowFrame</p>
+    </div>
     <div class="testimonials">
-      <div class="testimonial">“Increíble cómo una foto puede guardar un mensaje secreto. Parece magia.”</div>
-      <div class="testimonial">“Ideal para sorprender a alguien especial de una forma única.”</div>
-      <div class="testimonial">“La tecnología de esteganografía nunca se vio tan accesible y divertida.”</div>
+      <div class="testimonial">
+        <p>"Increíble cómo una foto puede guardar un mensaje secreto. Parece magia. Lo usé para sorprender a mi novia y quedó impresionada."</p>
+        <div class="author">- Carlos M.</div>
+      </div>
+      <div class="testimonial">
+        <p>"Ideal para comunicarse de forma discreta en mi trabajo. La interfaz es intuitiva y los resultados son perfectos."</p>
+        <div class="author">- Ana L.</div>
+      </div>
+      <div class="testimonial">
+        <p>"La tecnología de esteganografía nunca se vio tan accesible y divertida. Ahora todos mis mensajes importantes van ocultos en imágenes."</p>
+        <div class="author">- Javier R.</div>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mensajes Ocultos - Demo de Esteganografía</p>
+    <div class="section-header">
+      <h2>Nuestro Equipo</h2>
+    </div>
     <div class="authors">
-      <img src="autor1.jpg" alt="Autor 1">
-      <img src="autor2.jpg" alt="Autor 2">
+      <div class="author">
+        <img class="author-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Autor 1">
+        <h4>Deiby Prada</h4>
+        <p>Desarrollador de Software</p>
+      </div>
+      <div class="author">
+        <img class="author-img" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Autor 2">
+        <h4>Camilo Pérez</h4>
+        <p>Especialista en Ciberseguridad</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 ShadowFrame - Tecnología de Esteganografía Avanzada</p>
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
